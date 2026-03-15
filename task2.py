@@ -1,11 +1,18 @@
 import math
 
-num = float(input("Enter a number: "))
+try:
+    num = float(input("Enter a number: "))
 
-square_root = math.sqrt(num)
-logarithm = math.log(num)
-sine = math.sin(num)
+    if num < 0:
+        print("Square root not defined for negative numbers")
 
-print("Square root:", square_root)
-print("Logarithm:", logarithm)
-print("Sine:", sine)
+    elif num == 0:
+        print("Logarithm not defined for zero")
+
+    else:
+        print("Square root:", math.sqrt(num))
+        print("Logarithm:", math.log(num))
+        print("Sine:", math.sin(num))
+
+except ValueError:
+    print("Invalid input. Please enter a number.")
