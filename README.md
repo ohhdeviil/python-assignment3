@@ -3,15 +3,16 @@
 This repository contains two Python programs.
 
 Task 1:
-Program to calculate factorial using a function.
+Factorial calculation using recursion.
 
 Task 2:
-Program that uses the math module to calculate:
+Math module calculations including:
 - Square root
-- Natural logarithm (log base e)
-- Sine of a number
+- Natural logarithm
+- Sine
 
-Files:
-task1.py
-task2.py
-README.md
+How to Run:
+
+1. Run task1.py to calculate factorial.
+2. Run task2.py to perform math calculations.
+3. Enter the required number when prompted.
