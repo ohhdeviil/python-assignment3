@@ -1,10 +1,24 @@
 def factorial(n):
-    result = 1
-    for i in range(1, n + 1):
-        result = result * i
-    return result
+    """
+    This function calculates factorial using recursion
+    """
 
-num = int(input("Enter a number: "))
-fact = factorial(num)
+    # base case
+    if n == 0 or n == 1:
+        return 1
 
-print("Factorial of", num, "is:", fact)
+    # recursive case
+    return n * factorial(n - 1)
+
+
+try:
+    num = int(input("Enter a number: "))
+
+    if num < 0:
+        print("Factorial not defined for negative numbers")
+
+    else:
+        print("Factorial of", num, "is:", factorial(num))
+
+except ValueError:
+    print("Invalid input. Please enter an integer.")
